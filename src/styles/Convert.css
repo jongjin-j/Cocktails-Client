@@ -2,7 +2,7 @@
     width: 400px;
     float: right;
     margin-right: 20px;
-    margin-top: 70px;
+    margin-top: 5px;
 }
 
 .form-row {
@@ -13,4 +13,20 @@
 
 .result {
     margin-left: -10%;
+}
+
+@media only screen and (max-width: 800px) {
+    .converter {
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+    .form-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .result {
+        margin: 0;
+    }
 }

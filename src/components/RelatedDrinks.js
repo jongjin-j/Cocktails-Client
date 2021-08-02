@@ -13,7 +13,7 @@ export default function RelatedDrinks({ relatedDrinks }) {
                 return(
                   <button 
                     type="button" 
-                    class="btn btn-info" 
+                    className="btn btn-info" 
                     onClick={() => 
                     history.push(`/cocktails/${rel}`
                     )}

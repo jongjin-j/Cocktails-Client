@@ -36,8 +36,6 @@ export default function CocktailDetail({ cocktail }) {
 
           <h1>{cocktailName}</h1>
 
-          <Converter/>
-
           <div className="detailComponents">
             <div className="imageContainer">
               <img src={imageLink} alt="cocktailImage"/>
@@ -52,6 +50,10 @@ export default function CocktailDetail({ cocktail }) {
             <div className="ingredientTable">
               <IngredientTable ingredients={ingredients} />
             </div>
+          </div>
+
+          <div className="converter">
+            <Converter/>
           </div>
 
           <div className="related">

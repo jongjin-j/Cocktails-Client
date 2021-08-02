@@ -16,3 +16,20 @@
     max-height: 300px;
     overflow-x: hidden;
 }
+
+@media only screen and (max-width: 500px) {
+    .searchBar input {
+        width: 280px;
+        font-size: 1.1em;
+        height: 30px;
+        padding: 17px 14px;
+    }
+
+    .list-group {
+        width: 280px;
+        text-align: left;
+        height: auto;
+        max-height: 300px;
+        overflow-x: hidden;
+    }
+}

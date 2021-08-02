@@ -18,3 +18,17 @@
 .nav-link {
     font-size: 20px;
 }
+
+@media only screen and (max-width: 500px) {
+    #links {
+        display: flex;
+        text-align: right;
+    }
+    .navbar-brand {
+        margin-left: 20px;
+        font-size: 23px;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+}
