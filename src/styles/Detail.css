@@ -1,0 +1,71 @@
+.detail h2 {
+    color: white;
+    text-align: center;
+}
+
+.detail h3 {
+    color: white;
+}
+
+.detail p {
+    color: white;
+}
+
+.detail h1 {
+    color: white;
+    text-align: center;
+}
+
+.detailComponents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 140px;
+}
+
+.instructions {
+    width: 90%;
+}
+
+.instructions p {
+    font-size: 18px;
+}
+
+.imageContainer {
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:center; 
+   height:300px;
+   width:300px;
+   margin-left: 70px;
+}
+
+.imageContainer img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.imageContainer p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.ingredientTable {
+    width: 95%;
+}
+
+.related {
+    margin: 20px 30px;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.buttonsContainer button {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 18px;
+}
