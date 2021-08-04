@@ -8,6 +8,7 @@ import '../styles/Detail.css'
 
 export default function CocktailDetail({ cocktail }) {
 
+  const [loading, setLoading] = useState(false)
   const [cocktailName, setcocktailName] = useState('')
   const [cocktailGlass, setCocktailGlass] = useState('')
   const [instructions, setInstructions] = useState('')
@@ -18,6 +19,7 @@ export default function CocktailDetail({ cocktail }) {
   const baseURL = `https://cocktails-search.herokuapp.com/cocktail/${cocktail}`
 
   useEffect(() => {
+    setLoading(true)
     cocktailService 
       .getData(baseURL)
       .then(res => {
@@ -27,8 +29,20 @@ export default function CocktailDetail({ cocktail }) {
         setImageLink(res.imageLink)
         setIngredients(res.ingredients)
         setRelatedDrinks(res.relatedDrinks)
+        setLoading(false)
       })
   }, [baseURL])
+
+  if(loading){
+    return(
+      <div className="loading">
+        <h2>Hang on...</h2>
+        <div className="spinner-border text-light" role="status">
+          <span className="sr-only">Loading...</span>
+        </div>
+      </div>
+    )
+  }
 
     return (
         <div className="detail">
